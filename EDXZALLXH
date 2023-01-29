@@ -79,9 +79,9 @@ end)
 spawn(function()
     placemarker.Anchored = true
     placemarker.CanCollide = false
-    placemarker.Size = Vector3.new(8, 8, 8)
+    placemarker.Size = Vector3.new(5, 3, 5)
     placemarker.Transparency = 0.75
-    makemarker(placemarker, placemarker, Color3.fromRGB(139,0,139), 0.40, 0)
+    makemarker(placemarker, placemarker, Color3.fromRGB(0, 0, 0), 0.40, 0)
 end)    
 
 mouse.KeyDown:Connect(function(k)
@@ -89,7 +89,7 @@ mouse.KeyDown:Connect(function(k)
     if enabled then
         enabled = false
         SendNotification('Edxz Old', "Unlocked", 3)
-        guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(139,0,139)
+        guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     else
         enabled = true 
         Plr = getClosestPlayerToCursor()
