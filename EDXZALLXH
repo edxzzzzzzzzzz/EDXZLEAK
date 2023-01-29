@@ -25,7 +25,7 @@ game.StarterGui:SetCore(
 local CC = game:GetService"Workspace".CurrentCamera
 local Plr
 local enabled = false
-local accomidationfactor = 0.159
+local accomidationfactor = 0.165773
 local mouse = game.Players.LocalPlayer:GetMouse()
 local placemarker = Instance.new("Part", game.Workspace)
 
@@ -79,8 +79,8 @@ end)
 spawn(function()
     placemarker.Anchored = true
     placemarker.CanCollide = false
-    placemarker.Size = Vector3.new(5, 3, 5)
-    placemarker.Transparency = 0.75
+    placemarker.Size = Vector3.new(5, 15, 5)
+    placemarker.Transparency = 0.90
     makemarker(placemarker, placemarker, Color3.fromRGB(0, 0, 0), 0.40, 0)
 end)    
 
