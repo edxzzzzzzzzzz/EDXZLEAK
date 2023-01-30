@@ -25,7 +25,7 @@ game.StarterGui:SetCore(
 local CC = game:GetService"Workspace".CurrentCamera
 local Plr
 local enabled = false
-local accomidationfactor = 0.123894724982
+local accomidationfactor = 0.1194
 local mouse = game.Players.LocalPlayer:GetMouse()
 local placemarker = Instance.new("Part", game.Workspace)
 
@@ -88,7 +88,7 @@ mouse.KeyDown:Connect(function(k)
     if k ~= "q" then return end
     if enabled then
         enabled = false
-        SendNotification('Edxz Old', "Unlocked", 3)
+        SendNotification('Edxz Privates', "Unlocked", 3)
         guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(249, 255, 238)
     else
         enabled = true 
