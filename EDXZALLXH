@@ -134,7 +134,8 @@ local args = {...}
     end
     return old(...)
 end)
-wait(1)
+
+
 wait(4)
 if not game:IsLoaded() then
     game.Loaded:Wait()
@@ -437,6 +438,3 @@ else
 end
 end
 end)
-
-
-
