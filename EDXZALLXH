@@ -25,7 +25,7 @@ game.StarterGui:SetCore(
 local CC = game:GetService"Workspace".CurrentCamera
 local Plr
 local enabled = false
-local accomidationfactor = 0.10950
+local accomidationfactor = 0.1321042
 local mouse = game.Players.LocalPlayer:GetMouse()
 local placemarker = Instance.new("Part", game.Workspace)
 
